@@ -76,11 +76,11 @@ local ThemeManager = {} do
 	end
 
 	function ThemeManager:CreateThemeManager(groupbox)
-		groupbox:AddLabel('Background color'):AddColorPicker('BackgroundColor', { Default = self.Library.BackgroundColor });
-		groupbox:AddLabel('Main color')	:AddColorPicker('MainColor', { Default = self.Library.MainColor });
-		groupbox:AddLabel('Accent color'):AddColorPicker('AccentColor', { Default = self.Library.AccentColor });
-		groupbox:AddLabel('Outline color'):AddColorPicker('OutlineColor', { Default = self.Library.OutlineColor });
-		groupbox:AddLabel('Font color')	:AddColorPicker('FontColor', { Default = self.Library.FontColor });
+		groupbox:AddLabel('Background color'):AddColorPicker('BackgroundColor', { Default = Color3.fromRGB(35, 35, 35) });
+		groupbox:AddLabel('Main color')	:AddColorPicker('MainColor', { Default = Color3.fromRGB(30, 30, 30) });
+		groupbox:AddLabel('Accent color'):AddColorPicker('AccentColor', { Default = Color3.fromRGB(126, 72, 163) });
+		groupbox:AddLabel('Outline color'):AddColorPicker('OutlineColor', { Default = Color3.fromRGB(20, 20, 20) });
+		groupbox:AddLabel('Font color')	:AddColorPicker('FontColor', { Default = Color3.fromRGB(255, 255, 255) });
 
 		local ThemesArray = {}
 		for Name, Theme in next, self.BuiltInThemes do
